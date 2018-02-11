@@ -4,17 +4,23 @@
     <h3 class="panel-title"><%= link_to 'Tryck Här För Att Generera En Ny Superhjälte', root_path %></h3>
   </div>
   <div class="panel-body">
-   Superhero Namn:<br/> 
+   Your Superhero name:<br/> 
    <%= @hero_name %><br/>
    
-   Superhero Kraft:<br/>  
+   Your Super Power:<br/>  
    <%= @hero_power%><br/><br/>
    
-   Ditt undercover jobb 7-16: <br/>
+   Your Undercover Day Jobb is <br/>
    <%= @corp_title %> <br/><br/>
    
-   Din företags superkraft är:<br/>
+   Your Corporate Superpower is:<br/>
    <%= @corp_power %>
+   </br></br>
+   <img src="<%= @avatar %>">
+   
+   
+   </br>
+   Random number: <%= @rand_num %>
   </div>
   <div class="panel-footer"><%= link_to 'Skapa Ett Helt Team Med Superhjältar', home_team_path %></div>
 </div>
